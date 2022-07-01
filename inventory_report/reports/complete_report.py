@@ -5,7 +5,6 @@ class CompleteReport(SimpleReport):
     def get_companies_stock(list):
         items_by_company = {}
         for item in list:
-            print(item)
             if item["nome_da_empresa"] not in items_by_company:
                 items_by_company[item["nome_da_empresa"]] = 1
             else:
